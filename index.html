@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Florier</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<!-- Start header -->
+		<div class="header">
+			<div class="header-container">
+				<!-- Start logo -->
+				<div class="logo separator"><img src="new-images/main-logo.png" alt="Florier"></div>
+				<!-- End logo -->
+				<!-- Start title -->
+				<div class="title separator">
+					<p class="orange-title">сотни букетов</p>
+					<p>из магазинов вашего города</p>
+				</div>
+				<!-- End title -->
+				<!-- Start places -->
+				<div class="place">
+					<select name="places" class="places">
+					  <option value="1">МОГИЛЕВ, Беларусь</option>
+					  <option value="2">Минск, Беларусь</option>
+					  <option value="3">Брест, Беларусь</option>
+					  <option value="4">Гродно, Беларусь</option>
+					</select>
+				</div>
+				<!-- End places -->			
+				<!-- Start user panel -->
+				<!-- <div class="user-panel">
+					<em class="heart"></em>
+					<button class="orange-button">Войти</button>
+					<button class="green-button">Создать магазин</button>
+				</div> -->
+				<!-- End user panel -->
+				<!-- Start registered user panel -->
+				<div class="user-panel registered">
+					<em class="heart"><span>99</span></em>
+					<button class="orange-button">Войти</button>
+					<button class="user-button">Василий Петров</button>
+				</div>
+				<!-- End registered user panel -->
+			</div>						
+		</div>
+		<!-- End header -->
+		<!-- Start nav -->
+		<div class="nav">
+			<ul>
+				<li><a class="beta" href="#">Карта магазинов</a></li>
+				<li><a href="#">Каталог цветов</a></li>
+				<li><a href="#">Проверить заказ</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Помощь</a></li>
+			</ul>
+		</div>
+		<!-- End nav -->
+		<!-- Start slides -->
+		<div class="slideshow-content">
+			<div class="slides">
+				<img src="new-images/main-slide.png" style="width:100%">
+				<h2 class="title-slide high-text">
+					<p class="orange-title-slide">Сотни букетов</p>
+					<p>из магазинов вашего города</p>
+				</h2>
+			</div>
+			<div class="slides">
+				<img src="new-images/main-slide.png" style="width:100%">
+				<h2 class="title-slide high-text">
+					<p class="orange-title-slide">букетов</p>
+					<p>из магазинов вашего города</p>
+				</h2>
+			</div>
+			<div class="slides">
+				<img src="new-images/main-slide.png" style="width:100%">
+				<h2 class="title-slide high-text">
+					<p class="orange-title-slide">Сотни букетов</p>
+					<p>из магазинов вашего </p>
+				</h2>
+			</div>
+			<div class="slides">
+				<img src="new-images/main-slide.png" style="width:100%">
+				<h2 class="title-slide high-text">
+					<p class="orange-title-slide">Сотни букетов</p>
+					<p>из магазинов  города</p>
+				</h2>
+			</div>
+			<div class="slides">
+				<img src="new-images/main-slide.png" style="width:100%">
+				<h2 class="title-slide high-text">
+					<p class="orange-title-slide">Сотни букетов</p>
+					<p>из вашего города</p>
+				</h2>
+			</div>
+			<button class="arrow left-arrow" onclick="plusDivs(-1)"><img src="new-images/left-gray-arrow.png" alt="Previous"></button>
+			<button class="arrow right-arrow" onclick="plusDivs(1)"><img src="new-images/right-gray-arrow.png" alt="Next"></button>				
+		</div>
+		<!-- End slides -->
+		<!-- Start information -->
+		<div class="information">
+			<!-- Start row -->
+			<div class="row">
+				<div class="col">
+					<!-- Start hundred -->
+					<div class="content-information hundred">
+						<p>Сотни красивых букетов</p>
+						<p>из лучших магазинов</p>
+						<p>в одном месте</p>
+						<div class="more-information">
+							<p>
+								В базе Florier отборные букеты от надежных продавцов. 
+								Florier помогает сравнить стоимость букетов, выбрать удобное время посещения магазина или доставки заказа, оформить и оплатить заказ. 
+								Незачем просматривать ассортимент множества цветочных Интернет-магазинов.
+								Florier решил проблемы!
+							</p>
+						</div>
+					</div>
+					<!-- End hundered -->
+				</div>
+				<div class="col">
+					<!-- Start navigator -->
+					<div class="content-information navigator">
+						<p>Выбор магазинов по </p>
+						<p>месту расположения</p>
+						<p>покупателя</p>
+						<div class="more-information">
+							Florier ищет букеты в магазинах, близких к вашему месторасположению или адресу доставки.
+							Оформите заказ и назначьте время, когда вы его заберете в магазине или когда его ждет адресат.
+						</div>
+					</div>
+					<!-- End navigator -->
+				</div>
+				<div class="col">
+					<!-- Start stars -->
+					<div class="content-information stars">
+						<p>Рейтинговая система товаров,</p>
+						<p>основанная на отзывах</p>
+						<p>покупателей</p>
+						<div class="more-information">
+							Пятизвездочная рейтинговая система основывается на отзывах покупателей о товарах.
+							Рейтинги помогают потенциальным покупателям в выборе товара.
+						</div>
+					</div>
+					<!-- End stars -->
+				</div>
+			</div>
+			<!-- End row -->
+			<!-- Start more button -->
+			<div class="more-line">
+				<button class="more-button">Подробнее</button>
+			</div>
+			<!-- End more button -->
+		</div>
+		<!-- End information -->
+		<!-- Start categories -->
+		<div class="categories">
+			<h3 class="sub-title">Категории товаров</h3>
+			<ul class="categories-list">
+				<li class="category-item">
+					<a href="#">
+						<div class="item-image">
+							<img src="new-images/classic.png" alt="Классические">
+						</div>
+						<div class="category-name">Классические</div>
+					</a>
+				</li>
+				<li class="category-item">
+					<a href="#">
+						<div class="item-image">
+							<img src="new-images/bags-with-flowers.png" alt="Корзины с цветами">
+						</div>
+						<div class="category-name">Корзины с цветами</div>
+					</a>
+				</li>
+				<li class="category-item">
+					<a href="#">
+						<div class="item-image">
+							<img src="new-images/boxes-with-flowers.png" alt="Коробки с цветами">
+						</div>
+						<div class="category-name">Коробки с цветами</div>
+					</a>
+				</li>
+				<li class="category-item">
+					<a href="#">
+						<div class="item-image">
+							<img src="new-images/monoflowers.png" alt="Монобукеты">
+						</div>
+						<div class="category-name">Монобукеты</div>
+					</a>
+				</li>
+				<li class="category-item">
+					<a href="#">
+						<div class="item-image">
+							<img src="new-images/sweeties.png" alt="">
+						</div>
+						<div class="category-name">Сладости</div>
+					</a>
+				</li>
+				<li class="category-item">
+					<a href="#">
+						<div class="item-image">
+							<img src="new-images/dry-flowers.png" alt="">
+						</div>
+						<div class="category-name">Сухоцветы</div>
+					</a>
+				</li>
+				<li class="category-item">
+					<a href="#">
+						<div class="item-image">
+							<img src="new-images/bags-with-flowers.png" alt="">
+						</div>
+						<div class="category-name">Фрукты</div>
+					</a>
+				</li>
+				<li class="category-item">
+					<a href="#">
+						<div class="item-image">
+							<img src="new-images/bags-with-flowers.png" alt="">
+						</div>
+						<div class="category-name">Цветы в колбе</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- End categories -->
+		<!-- Start popular items -->
+		<div class="popular-items">
+			<h3 class="sub-title">Популярные товары</h3>
+			<ul class="popular-items-list">
+				<li class="popular-item">
+					<!-- Start popular item content -->
+					<div class="popular-item-content">
+						<!-- Start image item -->
+						<div class="image-item">
+							<em></em>
+							<img src="new-images/item-1.png" alt="Популярные товары 1">
+						</div>
+						<!-- End image item -->
+						<!-- Start details of item -->
+						<div class="details">
+							<!-- Start stars -->
+							<ul class="stars">
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star empty"><em></em></li>
+							</ul>
+							<!-- End stars -->
+							<!-- Start delivers -->
+							<div class="delivers">
+								<div class="type-of-deliver">
+									<div class="explain">Само-
+									вывоз</div>
+									<div class="icon"><img src="new-images/shop.png" alt="Самовывоз"></div>
+								</div>
+								<div class="type-of-deliver">
+									<div class="explain">Курьер</div>
+									<div class="icon"><img src="new-images/deliver.png" alt="Курьер"></div>
+								</div>
+								<div class="date-of-deliver">
+									Сегодня, завтра, другой день
+								</div>
+							</div>
+							<!-- End delivers -->
+							<!-- Start buy-section -->
+							<div class="buy-section">
+								<span class="price">999.99 BYN</span>	
+								<button class="orange-button buy-button">Купить</button>
+							</div>
+							<!-- End buy-section -->
+						</div>
+						<!-- End details of item -->
+					</div>
+					<!-- End popular item content -->
+				</li>
+				<li class="popular-item">
+					<!-- Start popular item content -->
+					<div class="popular-item-content">						
+						<!-- Start image item -->
+						<div class="image-item">
+							<em class="heart"></em>
+							<img src="new-images/item-2.png" alt="Популярные товары 1">
+						</div>
+						<!-- End image item -->
+						<!-- Start details of item -->
+						<div class="details">
+							<!-- Start stars -->
+							<ul class="stars">
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star empty"><em></em></li>
+							</ul>
+							<!-- End stars -->
+							<!-- Start delivers -->
+							<div class="delivers">
+								<div class="type-of-deliver">
+									<div class="explain">Само-
+									вывоз</div>
+									<div class="icon"><img src="new-images/shop.png" alt="Самовывоз"></div>
+								</div>
+								<div class="type-of-deliver">
+									<div class="explain">Курьер</div>
+									<div class="icon"><img src="new-images/deliver.png" alt="Курьер"></div>
+								</div>
+								<div class="date-of-deliver">
+									Сегодня, завтра, другой день
+								</div>
+							</div>
+							<!-- End delivers -->
+							<!-- Start buy-section -->
+							<div class="buy-section">
+								<span class="price">999.99 BYN</span>	
+								<button class="orange-button buy-button">Купить</button>
+							</div>
+							<!-- End buy-section -->
+						</div>
+						<!-- End details of item -->
+					</div>
+					<!-- End popular item content -->
+				</li>
+				<li class="popular-item">
+					<!-- Start popular item content -->
+					<div class="popular-item-content">
+						<!-- Start image item -->
+						<div class="image-item">
+							<em class="heart empty"></em>
+							<img src="new-images/item-1.png" alt="Популярные товары 1">
+							<div class="more-information-item">
+								<p class="size">&#x2194 30см &nbsp;&nbsp; &#x2195 33см</p>
+								<p>Роза — 9 шт.,</p>
+								<p>Орхидея — 9 шт.,</p>
+								<p>Роза — 9 шт.,</p>
+								<p>Орхидея — 9 шт.,</p>
+								<p>Роза — 9 шт.,</p>
+								<p>Орхидея — 9 шт.,</p>
+								<p>Другие — 10 шт.</p>
+								<p class="underline-text">Bloom - «Букет из 101 кенийской розы (80 см)»</p>
+							</div>
+						</div>
+						<!-- End image item -->
+						<!-- Start details of item -->
+						<div class="details">
+							<!-- Start stars -->
+							<ul class="stars">
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star empty"><em></em></li>
+							</ul>
+							<!-- End stars -->
+							<!-- Start delivers -->
+							<div class="delivers">
+								<div class="type-of-deliver">
+									<div class="explain">Само-
+									вывоз</div>
+									<div class="icon"><img src="new-images/shop.png" alt="Самовывоз"></div>
+								</div>
+								<div class="type-of-deliver">
+									<div class="explain">Курьер</div>
+									<div class="icon"><img src="new-images/deliver.png" alt="Курьер"></div>
+								</div>
+								<div class="date-of-deliver">
+									Сегодня, завтра, другой день
+								</div>
+							</div>
+							<!-- End delivers -->
+							<!-- Start buy-section -->
+							<div class="buy-section">
+								<span class="price">999.99 BYN</span>	
+								<button class="orange-button buy-button">Купить</button>
+							</div>
+							<!-- End buy-section -->
+						</div>
+						<!-- End details of item -->
+					</div>
+					<!-- End popular item content -->
+				</li>
+				<li class="popular-item">
+					<!-- Start popular item content -->
+					<div class="popular-item-content">
+						<!-- Start image item -->
+						<div class="image-item">
+							<em class="heart"></em>
+							<img src="new-images/item-1.png" alt="Популярные товары 1">
+							<div class="more-information-item">
+								<p class="size">&#x2194 30см &nbsp;&nbsp; &#x2195 33см</p>
+								<p>Роза — 9 шт.,</p>
+								<p>Орхидея — 9 шт.,</p>
+								<p>Роза — 9 шт.,</p>
+								<p>Орхидея — 9 шт.,</p>
+								<p>Роза — 9 шт.,</p>
+								<p>Орхидея — 9 шт.,</p>
+								<p>Другие — 10 шт.</p>
+								<p class="underline-text">Bloom - «Букет из 101 кенийской розы (80 см)»</p>
+							</div>
+						</div>
+						<!-- End image item -->
+						<!-- Start details of item -->
+						<div class="details">
+							<!-- Start stars -->
+							<ul class="stars">
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star empty"><em></em></li>
+							</ul>
+							<!-- End stars -->
+							<!-- Start delivers -->
+							<div class="delivers">
+								<div class="type-of-deliver">
+									<div class="explain">Само-
+									вывоз</div>
+									<div class="icon"><img src="new-images/shop.png" alt="Самовывоз"></div>
+								</div>
+								<div class="type-of-deliver">
+									<div class="explain">Курьер</div>
+									<div class="icon"><img src="new-images/deliver.png" alt="Курьер"></div>
+								</div>
+								<div class="date-of-deliver">
+									Сегодня, завтра, другой день
+								</div>
+							</div>
+							<!-- End delivers -->
+							<!-- Start buy-section -->
+							<div class="buy-section">
+								<span class="price">999.99 BYN</span>	
+								<button class="orange-button buy-button">Купить</button>
+							</div>
+							<!-- End buy-section -->
+						</div>
+						<!-- End details of item -->
+					</div>
+					<!-- End popular item content -->
+				</li>
+			</ul>
+			<button class="arrow left-arrow"><img src="new-images/left-gray-arrow.png" alt="Previous"></button>
+			<button class="arrow right-arrow"><img src="new-images/right-gray-arrow.png" alt="Next"></button>
+		</div>
+		<!-- End popular items -->
+		<!-- Start best of section -->
+		<div class="best-of">
+			<div class="content">
+				<h2><span class="orange-text">Подари</span> лучшее</h2>
+				<img src="new-images/main-logo.png" alt="Florier">
+			</div>
+		</div>
+		<!-- End best of section -->
+		<!-- Start main information  -->
+		<div class="main-information">
+			<p>Florier.by объединяет цветочные магазины и флористов в одном месте</p>
+			<p>Florier.by — электронная торговая площадка для цветочных магазинов и частных флористов. Команада florier.by постаралась создать единую и комфортную интернет-платформу для продавцов и покупателей. Благодаря этому покупатель не тратит время на поиск букета в отдельных интернет-магазинах - цветочные магазины и индивидуальные флористы размещают цветочные товары здесь. Покупателю остается только выбрать и заказать понравившийся букет, а об остальном позаботится florier.by и авторы букета.</p>
+			<p>Florier предлагает букеты из экзотических и популярных цветов — роз, гвоздик, тюльпанов, ирисов, гербер, пионов, орхидей и других цветов.</p>
+			<p><a href="#">Фильтр florier.by</a> поможет выбрать букет к праздничному событию или знаменательному дню, отсортировать букеты по цене, составу или желаемому цвету.</p>
+			<p><a href="#">Карта florier.by</a> поможет найти магазин, ближайший к адресу получателя.</p>
+			<p>Florier.by предлагает букеты из 101 розы, букеты любимой, букеты невестам, свадебные букеты, строгие букеты для коллег или необыкновенные букеты на день рождения.</p>
+			<p>Florier.by гарантирует покупателям:</p>
+			<ul>
+				<li>онлайн-контроль размещенного заказа;</li>
+				<li>точность сроков изготовления и доставки букетов;</li>
+				<li>соответствие букетов изображениям из каталога магазина-партнера;</li>
+			</ul>
+		</div>
+		<!-- End main information -->
+		<!-- Start instagram -->
+		<div class="instagram-section">
+			<h3 class="sub-title">инстаграм: #florier</h3>
+			<div class="instagram-content">
+				<ul class="instagram-list">
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
+				</ul>
+				<button class="arrow left-arrow"><img src="new-images/left-gray-arrow.png" alt="Previous"></button>
+				<button class="arrow right-arrow"><img src="new-images/right-gray-arrow.png" alt="Next"></button>	
+			</div>
+		</div>
+		<!-- End instagrm -->
+		<!-- Start footer -->
+		<div class="footer">
+			<div class="footer-content">
+				<div class="social-section">
+					<p>&copy; 2017 Florier</p>
+					<ul>
+						<li><a href="#"><img src="new-images/vk.png" alt=""></a></li>
+						<li><a href="#"><img src="new-images/instagram.png" alt=""></a></li>
+						<li><a href="#"><img src="new-images/fb.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="for-people">
+					<ul>
+						<li><p>Покупателям</p></li>
+						<li><a href="#">Информационное соглашение</a></li>
+						<li><a href="#">Политика конфеденциальности</a></li>
+					</ul>
+				</div>
+				<div class="for-people">
+					<ul>
+						<li><p>Продавцам</p></li>
+						<li><a href="#">Публичная оферта</a></li>
+						<li><a href="#">Условия работы</a></li>
+					</ul>
+				</div>
+				<div class="pays">
+					<div class="prior">
+						<a href="#"><img src="new-images/prior.png" alt="Приорбанк"></a>
+					</div>
+					<div class="webpay">
+						<a href="#"><img src="new-images/webpay.png" alt="Webpay"></a>
+					</div>
+					<div class="belki">
+						<a href="#"><img src="new-images/belqi.png" alt="Belqi"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End footer -->
+	</div>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/functions.js"></script>
+</body>
+</html>
+
