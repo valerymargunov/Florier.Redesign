@@ -18,7 +18,8 @@ body, html {
   color: #333333;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px; }
 
 button {
   padding: 10px 15px;
@@ -52,11 +53,13 @@ button {
       background: #27AE60; }
   .container .sub-title {
     text-transform: uppercase;
-    margin: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     text-align: center; }
   .container .header {
     width: 100%;
-    border-bottom: 1px solid #CCCCCC; }
+    border-bottom: 1px solid #CCCCCC;
+    height: 80px; }
     .container .header .header-container {
       width: 1280px;
       height: 70px;
@@ -66,22 +69,23 @@ button {
         .container .header .header-container .separator:after {
           content: "";
           position: absolute;
-          top: 15px;
-          bottom: 15px;
+          top: 25px;
+          height: 30px;
           right: 0;
           border-right: 1px solid #333333; }
       .container .header .header-container .logo {
         height: 100%;
         float: left; }
         .container .header .header-container .logo img {
-          padding: 15px 15px 0 0; }
+          height: 30px;
+          padding: 25px 25px 0 0; }
       .container .header .header-container .title {
         height: 100%;
-        padding: 0 40px;
+        padding: 0 25px;
         float: left;
         text-transform: uppercase; }
         .container .header .header-container .title .orange-title {
-          margin-top: 15px;
+          margin-top: 25px;
           color: #FF883F; }
       .container .header .header-container .place {
         float: left;
@@ -90,8 +94,8 @@ button {
         .container .header .header-container .place:before {
           position: absolute;
           content: "";
-          margin-top: 15px;
-          top: 10px;
+          margin-top: 25px;
+          top: 5px;
           bottom: 10px;
           left: 0px;
           height: 18px;
@@ -100,10 +104,10 @@ button {
         .container .header .header-container .place:after {
           position: absolute;
           content: "";
-          margin-top: 15px;
-          top: 15px;
+          margin-top: 25px;
+          top: 10px;
           bottom: 10px;
-          right: 0px;
+          right: -10px;
           height: 9px;
           width: 16px;
           background-repeat: no-repeat;
@@ -115,9 +119,9 @@ button {
           font-family: Comfortaa-Regular;
           text-decoration: underline;
           border: 0;
-          margin-top: 10px;
+          margin-top: 15px;
           overflow: hidden;
-          padding: 15px 26px;
+          padding: 18px 26px;
           white-space: nowrap;
           outline: none; }
         .container .header .header-container .place select::-ms-expand {
@@ -131,29 +135,36 @@ button {
         float: right; }
         .container .header .header-container .user-panel .heart {
           float: left;
-          margin-top: 20px;
-          margin-right: 5px;
+          margin-top: 28px;
           display: inline-block;
           background-repeat: no-repeat;
-          height: 26px;
-          width: 26px;
+          height: 23px;
+          width: 25px;
+          -webkit-background-size: cover;
+             -moz-background-size: cover;
+               -o-background-size: cover;
+                  background-size: cover;
           background-image: url("../new-images/heart-light-contour.png"); }
         .container .header .header-container .user-panel .active-heart {
           background-image: url("../new-images/heart-contour.png"); }
         .container .header .header-container .user-panel button {
           display: block;
           float: left;
-          margin-top: 15px;
-          margin-left: 10px; }
+          margin-top: 23px;
+          margin-left: 20px;
+          height: 33px; }
+        .container .header .header-container .user-panel .orange-button {
+          width: 90px; }
+        .container .header .header-container .user-panel .green-button {
+          width: 180px; }
       .container .header .header-container .registered .heart {
         font-style: normal;
         color: #ffffff;
         background-image: url("../new-images/heart-light-orange.png"); }
         .container .header .header-container .registered .heart span {
           display: inline-block;
-          padding-top: 3px;
-          padding-left: 4px;
-          font-size: 11pt; }
+          padding-top: 4px;
+          padding-left: 4px; }
       .container .header .header-container .registered .active-heart {
         background-image: url("../new-images/heart-orange.png"); }
       .container .header .header-container .registered button {
@@ -165,6 +176,7 @@ button {
         -moz-transition: all 0.3s ease;
         transition: all 0.3s ease; }
         .container .header .header-container .registered button:hover {
+          background: #FAFAFA;
           border: 1px solid #F56400; }
       .container .header .header-container .registered .user-button {
         color: #0066CC;
@@ -173,8 +185,11 @@ button {
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
+        transition: all 0.3s ease;
+        padding-left: 20px;
+        margin-left: 0; }
         .container .header .header-container .registered .user-button:hover {
+          background: transparent;
           border: none;
           color: #F56400;
           text-decoration: none; }
@@ -186,12 +201,12 @@ button {
       list-style: none; }
       .container .nav ul li {
         display: inline-block;
-        padding: 0 15px; }
+        padding-left: 40px; }
         .container .nav ul li:first-child {
           padding: 0; }
         .container .nav ul li a {
-          margin-top: 17px;
-          padding-bottom: 15px;
+          line-height: 46px;
+          height: 48px;
           display: inline-block;
           text-decoration: none;
           color: #333333;
@@ -201,13 +216,13 @@ button {
           -moz-transition: all 0.3s ease;
           transition: all 0.3s ease; }
           .container .nav ul li a:hover {
+            height: 46px;
             color: #FF883F;
-            padding-bottom: 13px;
             border-bottom: 2px solid #FF883F; }
         .container .nav ul li .beta {
           position: relative; }
           .container .nav ul li .beta:after {
-            font-size: 7pt;
+            font-size: 8px;
             content: 'Beta';
             position: absolute;
             top: -8px;
@@ -249,56 +264,83 @@ button {
     .container .slideshow-content .right-arrow {
       right: 100px; }
   .container .information {
-    width: 100%;
-    margin: 0 auto;
     margin-top: 35px; }
     .container .information .row {
       margin: 0 auto;
       width: 1280px; }
       .container .information .row .col {
-        width: 33%;
-        float: left; }
-        .container .information .row .col .content-information {
-          margin-left: 100px;
-          padding-left: 10px;
-          border-left: 1px solid #333333; }
+        width: 426px;
+        float: left;
+        position: relative; }
+        .container .information .row .col:last-child {
+          width: 428px; }
         .container .information .row .col .hundred {
-          position: relative; }
-          .container .information .row .col .hundred:before {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            left: -95px;
-            top: 0;
-            content: ' ';
-            background-image: url("../new-images/hundred.png");
-            background-repeat: no-repeat; }
+          height: 60px;
+          width: 110px;
+          -webkit-background-size: auto auto;
+             -moz-background-size: auto;
+               -o-background-size: auto;
+                  background-size: auto;
+          position: absolute;
+          left: 0px;
+          top: 0;
+          content: ' ';
+          background-image: url("../new-images/hundred.png");
+          background-repeat: no-repeat;
+          -webkit-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
+          .container .information .row .col .hundred:hover {
+            background-image: url("../new-images/hundred-active.png"); }
         .container .information .row .col .navigator {
-          position: relative; }
-          .container .information .row .col .navigator:before {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            left: -50px;
-            top: 0;
-            content: ' ';
-            background-image: url("../new-images/big-arrow.png");
-            background-repeat: no-repeat;
-            position: absolute; }
+          height: 60px;
+          width: 110px;
+          -webkit-background-size: auto auto;
+             -moz-background-size: auto;
+               -o-background-size: auto;
+                  background-size: auto;
+          position: absolute;
+          left: 35px;
+          top: 0;
+          content: ' ';
+          background-image: url("../new-images/navigator.png");
+          background-repeat: no-repeat;
+          -webkit-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
+          .container .information .row .col .navigator:hover {
+            background-image: url("../new-images/navigator-active.png"); }
         .container .information .row .col .stars {
-          position: relative; }
-          .container .information .row .col .stars:before {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            left: -55px;
-            top: 0;
-            content: ' ';
-            background-image: url("../new-images/stars.png");
-            background-repeat: no-repeat; }
+          height: 60px;
+          width: 110px;
+          -webkit-background-size: auto auto;
+             -moz-background-size: auto;
+               -o-background-size: auto;
+                  background-size: auto;
+          position: absolute;
+          left: 30px;
+          top: 0;
+          content: ' ';
+          background-image: url("../new-images/stars.png");
+          background-repeat: no-repeat;
+          -webkit-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
+          .container .information .row .col .stars:hover {
+            background-image: url("../new-images/stars-active.png"); }
+        .container .information .row .col .content-information {
+          margin-left: 110px;
+          padding-left: 25px;
+          border-left: 1px solid #333333;
+          font-size: 16px;
+          height: 60px; }
         .container .information .row .col .more-information {
-          margin-top: 20px;
-          font-size: 11pt;
+          padding-top: 20px;
+          margin-top: 0px;
+          font-size: 14px;
           line-height: 1.5;
           overflow: hidden;
           max-height: 0;
@@ -307,7 +349,7 @@ button {
           -moz-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out; }
     .container .information .more-line {
-      padding-top: 40px;
+      padding-top: 42.5px;
       clear: both;
       border-bottom: 1px solid #CCCCCC;
       position: relative;
@@ -318,7 +360,9 @@ button {
       .container .information .more-line .more-button {
         position: absolute;
         left: 45%;
-        top: 20px;
+        top: 25px;
+        height: 33px;
+        width: 130px;
         background: #ffffff;
         color: #333333;
         -webkit-border-radius: 15px;
@@ -340,7 +384,8 @@ button {
         -o-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
         transition: all 0.5s ease;
-        border: 1px solid #FF883F; }
+        border: 1px solid #FF883F;
+        background: #FAFAFA; }
   .container .categories {
     width: 1280px;
     margin: 0 auto; }
@@ -358,7 +403,7 @@ button {
           -moz-transition: all 0.3s ease;
           transition: all 0.3s ease;
           position: relative;
-          height: 180px;
+          height: 160px;
           position: relative;
           width: 100%; }
           .container .categories .categories-list .category-item a .item-image {
@@ -369,9 +414,8 @@ button {
             height: 120px; }
             .container .categories .categories-list .category-item a .item-image img {
               display: block;
-              margin: auto;
+              margin: 0 auto;
               position: absolute;
-              top: 0;
               bottom: 0;
               left: 0;
               right: 0;
@@ -384,12 +428,11 @@ button {
             bottom: 0;
             left: 0;
             right: 0;
-            text-align: center;
-            height: 50px; }
+            text-align: center; }
           .container .categories .categories-list .category-item a:hover {
             color: #FF883F; }
             .container .categories .categories-list .category-item a:hover img {
-              opacity: 0.3; }
+              bottom: 7px; }
   .container .popular-items {
     width: 1280px;
     margin: 0 auto;

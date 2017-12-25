@@ -6,6 +6,7 @@ $main-width: 100%;
 $narrow-width: 1280px;
 $white: #ffffff;
 $light-grey: #CCCCCC;
+$light-light-grey: #FAFAFA;
 $main-color: #333333;
 $orange: #FF883F;
 $dark-orange: #F56400;
@@ -27,6 +28,7 @@ body, html {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
 }
 button {
 	padding: 10px 15px;
@@ -62,7 +64,8 @@ button {
 	// Start sub title
 	.sub-title {
 		text-transform: uppercase;
-		margin: 40px;
+		margin-top: 60px;
+		margin-bottom: 40px;
 		text-align: center;
 	}
 	// End sub title
@@ -70,6 +73,7 @@ button {
 	.header {
 		width: $main-width;
 		border-bottom: 1px solid $light-grey;
+		height: 80px;
 		.header-container{
 			width: $narrow-width;
 			height: 70px;
@@ -80,8 +84,8 @@ button {
 				&:after {
 					content: "";
 					position: absolute;
-					top: 15px;
-					bottom: 15px;
+					top: 25px;
+					height: 30px;
 					right: 0;				
 					border-right: 1px solid $main-color;
 				}
@@ -92,18 +96,19 @@ button {
 				height: 100%;			
 				float: left;
 				img {
-					padding: 15px 15px 0 0;
+					height: 30px;
+					padding: 25px 25px 0 0;
 				}
 			}
 			// End logo
 			// Start title
 			.title {
 				height: 100%;
-				padding: 0 40px;
+				padding: 0 25px;
 				float: left;
 				text-transform: uppercase;
 				.orange-title{
-					margin-top: 15px;
+					margin-top: 25px;
 					color: $orange;
 				}
 			}
@@ -116,8 +121,8 @@ button {
 				&:before{
 					position: absolute;
 					content: "";
-					margin-top: 15px;
-					top: 10px;
+					margin-top: 25px;
+					top: 5px;
 					bottom: 10px;
 					left: 0px;
 					height: 18px;
@@ -127,10 +132,10 @@ button {
 				&:after{
 					position: absolute;
 					content: "";
-					margin-top: 15px;
-					top: 15px;
+					margin-top: 25px;
+					top: 10px;
 					bottom: 10px;
-					right: 0px;
+					right: -10px;
 					height: 9px;
 					width: 16px;
 					background-repeat: no-repeat;
@@ -141,9 +146,9 @@ button {
 					font-family: $main-font;
 					text-decoration: underline;
 					border: 0;
-					margin-top: 10px;				
+					margin-top: 15px;				
 					overflow: hidden;
-					padding: 15px 26px;			   
+					padding: 18px 26px;			   
 					white-space: nowrap;				
 					outline: none;								
 				}
@@ -170,22 +175,29 @@ button {
 				float: right;			
 				.heart {		
 					float: left;		
-					margin-top: 20px;
-					margin-right: 5px;
+					margin-top: 28px;
 					display: inline-block;
 					background-repeat: no-repeat;
-					height: 26px;
-					width: 26px;
+					height: 23px;
+					width: 25px;
+					background-size: cover;
 					background-image: url('../new-images/heart-light-contour.png');
 				}
-				.active-heart {				
+				.active-heart {			
 					background-image: url('../new-images/heart-contour.png');
 				}
 				button {
 					display: block;
 					float: left;
-					margin-top: 15px;
-					margin-left: 10px;
+					margin-top: 23px;
+					margin-left: 20px;
+					height: 33px;
+				}
+				.orange-button {
+					width: 90px;
+				}
+				.green-button {					
+					width: 180px;
 				}
 			}
 			// End user panel
@@ -197,9 +209,8 @@ button {
 					background-image: url('../new-images/heart-light-orange.png');
 					span {
 						display: inline-block;
-						padding-top: 3px;
+						padding-top: 4px;
 						padding-left: 4px;
-						font-size: 11pt;
 					}
 				}
 				.active-heart {				
@@ -211,6 +222,7 @@ button {
 					color: $main-color;
 					transition: all 0.3s ease;
 					&:hover {
+						background: $light-light-grey;
 						border: 1px solid $dark-orange;
 					}
 				}						
@@ -219,7 +231,10 @@ button {
 					border: none;
 					text-decoration: underline;
 					transition: all 0.3s ease;
+					padding-left: 20px;
+					margin-left: 0;
 					&:hover {
+						background: transparent;
 						border: none;
 						color: $dark-orange;
 						text-decoration: none;
@@ -236,31 +251,31 @@ button {
 		ul {
 			margin: 0 auto;
 			width: $narrow-width;
-			list-style: none;			
+			list-style: none;						
 			li {
 				display: inline-block;				
-				padding: 0 15px;
+				padding-left: 40px;
 				&:first-child {
-					padding:0;
+					padding: 0;
 				}
 				a {
-					margin-top: 17px;
-					padding-bottom: 15px;
+					line-height: 46px;
+					height: 48px;
 					display: inline-block;
 					text-decoration: none;
 					color: $main-color;					
 					border-color: $orange;
 					transition: all 0.3s ease;
 					&:hover {
+						height: 46px;
 						color: $orange;
-						padding-bottom: 13px;
 						border-bottom: 2px solid $orange;
 					}
 				}
 				.beta {
 					position: relative;
 					&:after {
-						font-size: 7pt;
+						font-size: 8px;
 						content: 'Beta';
 						position: absolute;
 						top: -8px;
@@ -312,67 +327,76 @@ button {
 	// End slideshow
 	// Start information
 	.information {
-		width: $main-width;
-		margin: 0 auto;
 		margin-top: 35px;
 		.row{
 			margin: 0 auto;
 			width: $narrow-width;
 			// Start col
 			.col {
-				width:33%;
-				float: left;	
-
-				.content-information {
-					margin-left: 100px; 
-					padding-left: 10px;
-					border-left: 1px solid $main-color;
+				width:426px;
+				float: left;
+				position: relative;
+				&:last-child {
+					width:428px;
 				}
 				//Start icons for col
 				.hundred {
-					position: relative;
-					&:before {
-						height: 100%;
-						width: 100%;
-						position: absolute;
-						left: -95px;
-						top: 0;
-						content: ' ';
-						background-image: url('../new-images/hundred.png');
-						background-repeat: no-repeat;						
+					height: 60px;
+					width: 110px;
+					background-size: auto;
+					position: absolute;
+					left: 0px;
+					top: 0;
+					content: ' ';
+					background-image: url('../new-images/hundred.png');
+					background-repeat: no-repeat;
+					transition: all 0.3s ease-out;
+					&:hover {
+						background-image: url('../new-images/hundred-active.png');
 					}
 				}
 				.navigator {
-					position: relative;
-					&:before {
-						height: 100%;
-						width: 100%;
-						position: absolute;
-						left: -50px;
-						top: 0;
-						content: ' ';
-						background-image: url('../new-images/big-arrow.png');
-						background-repeat: no-repeat;
-						position: absolute;
+					height: 60px;
+					width: 110px;
+					background-size: auto;
+					position: absolute;
+					left: 35px;
+					top: 0;
+					content: ' ';
+					background-image: url('../new-images/navigator.png');
+					background-repeat: no-repeat;
+					transition: all 0.3s ease-out;
+					&:hover {
+						background-image: url('../new-images/navigator-active.png');
 					}
 				}
 				.stars {
-					position: relative;
-					&:before {
-						height: 100%;
-						width: 100%;
-						position: absolute;
-						left: -55px;
-						top: 0;
-						content: ' ';
-						background-image: url('../new-images/stars.png');
-						background-repeat: no-repeat;
+					height: 60px;
+					width: 110px;
+					background-size: auto;
+					position: absolute;
+					left: 30px;
+					top: 0;
+					content: ' ';
+					background-image: url('../new-images/stars.png');
+					background-repeat: no-repeat;
+					transition: all 0.3s ease-out;
+					&:hover {
+						background-image: url('../new-images/stars-active.png');
 					}
 				}
 				// End icons for col
+				.content-information {
+					margin-left: 110px; 
+					padding-left: 25px;
+					border-left: 1px solid $main-color;
+					font-size: 16px;
+					height: 60px;
+				}				
 				.more-information {
-					margin-top: 20px;
-					font-size: 11pt;
+					padding-top: 20px;
+					margin-top: 0px;
+					font-size: 14px;
 					line-height: 1.5;					
 					overflow: hidden;
 					max-height: 0;
@@ -380,11 +404,12 @@ button {
 				}
 			}
 			// End col
+
 		}
 		//End row
 		// Start more-line
 		.more-line {
-			padding-top: 40px;
+			padding-top: 42.5px;
 			clear: both;
 			border-bottom: 1px solid $light-grey;
 			position: relative;
@@ -392,7 +417,9 @@ button {
 			.more-button {
 				position: absolute;
 				left: 45%;
-				top: 20px;;
+				top: 25px;
+				height: 33px;
+				width: 130px;
 				background: $white;
 				color: $main-color;
 				border-radius: 15px;
@@ -408,6 +435,7 @@ button {
 			.more-button {	
 				transition: all 0.5s ease ;			
 				border: 1px solid $orange;
+				background: $light-light-grey;
 			}
 		}
 		// End more-line-active
@@ -430,7 +458,7 @@ button {
 					text-decoration: none;
 					transition: all 0.3s ease;
 					position: relative;
-					height: 180px;
+					height: 160px;
 					position: relative;
 					width: 100%;
 					// Start item image
@@ -442,9 +470,8 @@ button {
 						height: 120px;
 						img {
 							display: block;
-							margin: auto;
+							margin: 0 auto;
 							position: absolute;
-						    top: 0;
 						    bottom: 0;
 						    left: 0;
 						    right: 0;
@@ -459,14 +486,13 @@ button {
 						left: 0;
 						right: 0;
 						text-align: center;
-						height: 50px;
 					}
 					// End category name
 					// Start hover effect for item
 					&:hover {						
 						color: $orange;
 						img {							
-							opacity: 0.3;
+							bottom: 7px;
 						}
 					}
 					// End hover effect for item
