@@ -30,18 +30,18 @@
 				</div>
 				<!-- End places -->			
 				<!-- Start user panel -->
-				<div class="user-panel">
+				<!-- <div class="user-panel">
 					<em class="heart"></em>
 					<button class="orange-button">Войти</button>
 					<button class="green-button">Создать магазин</button>
 				</div>
-				<!-- End user panel -->
+ -->				<!-- End user panel -->
 				<!-- Start registered user panel -->
-				<!-- <div class="user-panel registered">
+				<div class="user-panel registered">
 					<em class="heart"><span>99</span></em>
 					<button class="orange-button">Войти</button>
 					<button class="user-button">Василий Петров</button>
-				</div> -->
+				</div>
 				<!-- End registered user panel -->
 			</div>						
 		</div>
@@ -59,43 +59,35 @@
 		<!-- End nav -->
 		<!-- Start slides -->
 		<div class="slideshow-content">
-			<div class="slides">
-				<img src="new-images/main-slide.png" style="width:100%">
-				<h2 class="title-slide high-text">
-					<p class="orange-title-slide">Сотни букетов</p>
-					<p>из магазинов вашего города</p>
-				</h2>
-			</div>
-			<div class="slides">
-				<img src="new-images/main-slide.png" style="width:100%">
-				<h2 class="title-slide high-text">
-					<p class="orange-title-slide">букетов</p>
-					<p>из магазинов вашего города</p>
-				</h2>
-			</div>
-			<div class="slides">
-				<img src="new-images/main-slide.png" style="width:100%">
-				<h2 class="title-slide high-text">
-					<p class="orange-title-slide">Сотни букетов</p>
-					<p>из магазинов вашего </p>
-				</h2>
-			</div>
-			<div class="slides">
-				<img src="new-images/main-slide.png" style="width:100%">
-				<h2 class="title-slide high-text">
-					<p class="orange-title-slide">Сотни букетов</p>
-					<p>из магазинов  города</p>
-				</h2>
-			</div>
-			<div class="slides">
-				<img src="new-images/main-slide.png" style="width:100%">
-				<h2 class="title-slide high-text">
-					<p class="orange-title-slide">Сотни букетов</p>
-					<p>из вашего города</p>
-				</h2>
-			</div>
-			<button class="arrow left-arrow" onclick="plusDivs(-1)"><img src="new-images/left-gray-arrow.png" alt="Previous"></button>
-			<button class="arrow right-arrow" onclick="plusDivs(1)"><img src="new-images/right-gray-arrow.png" alt="Next"></button>				
+			<ul class="slides">
+				<li>
+					<img src="new-images/main-slide.png" style="width:100%">
+					<div class="caption-wrapper">
+						<h2 class="title-slide high-text">
+							<p class="orange-title-slide">Сотни букетов</p>
+							<p>из магазинов вашего города</p>
+						</h2>						
+					</div>				
+				</li>
+				<li>
+					<img src="new-images/main-slide.png" style="width:100%">
+					<div class="caption-wrapper">
+						<h2 class="title-slide high-text">
+							<p class="orange-title-slide">Сотни букетов</p>
+							<p>из магазинов вашего города</p>
+						</h2>						
+					</div>	
+				</li>
+				<li>
+					<img src="new-images/main-slide.png" style="width:100%">
+					<div class="caption-wrapper">
+						<h2 class="title-slide high-text">
+							<p class="orange-title-slide">Сотни букетов</p>
+							<p>из магазинов вашего города</p>
+						</h2>						
+					</div>	
+				</li>
+			</ul>					
 		</div>
 		<!-- End slides -->
 		<!-- Start information -->
@@ -279,6 +271,7 @@
 					</div>
 					<!-- End popular item content -->
 				</li>
+				
 				<li class="popular-item">
 					<!-- Start popular item content -->
 					<div class="popular-item-content">						
@@ -501,14 +494,14 @@
 				</div>
 				<div class="for-people">
 					<ul>
-						<li><p>Покупателям</p></li>
+						<li><p class="bolder">Покупателям</p></li>
 						<li><a href="#">Информационное соглашение</a></li>
 						<li><a href="#">Политика конфеденциальности</a></li>
 					</ul>
 				</div>
 				<div class="for-people">
 					<ul>
-						<li><p>Продавцам</p></li>
+						<li><p class="bolder">Продавцам</p></li>
 						<li><a href="#">Публичная оферта</a></li>
 						<li><a href="#">Условия работы</a></li>
 					</ul>
@@ -529,6 +522,7 @@
 		<!-- End footer -->
 	</div>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/flexslider/2.6.2/jquery.flexslider.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/functions.js"></script>
 </body>

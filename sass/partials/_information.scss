@@ -1,0 +1,116 @@
+// Start information
+.information {
+	margin-top: 35px;
+	.row{
+		margin: 0 auto;
+		width: $narrow-width;
+		// Start col
+		.col {
+			width:426px;
+			float: left;
+			position: relative;
+			&:last-child {
+				width:428px;
+			}
+			//Start icons for col
+			.hundred {
+				height: 60px;
+				width: 110px;
+				background-size: auto;
+				position: absolute;
+				left: 0px;
+				top: 0;
+				content: ' ';
+				background-image: url('../new-images/hundred.png');
+				background-repeat: no-repeat;
+				transition: all 0.3s ease-out;
+				&:hover {
+					background-image: url('../new-images/hundred-active.png');
+				}
+			}
+			.navigator {
+				height: 60px;
+				width: 110px;
+				background-size: auto;
+				position: absolute;
+				left: 35px;
+				top: 0;
+				content: ' ';
+				background-image: url('../new-images/navigator.png');
+				background-repeat: no-repeat;
+				transition: all 0.3s ease-out;
+				&:hover {
+					background-image: url('../new-images/navigator-active.png');
+				}
+			}
+			.stars {
+				height: 60px;
+				width: 110px;
+				background-size: auto;
+				position: absolute;
+				left: 30px;
+				top: 0;
+				content: ' ';
+				background-image: url('../new-images/stars.png');
+				background-repeat: no-repeat;
+				transition: all 0.3s ease-out;
+				&:hover {
+					background-image: url('../new-images/stars-active.png');
+				}
+			}
+			// End icons for col
+			.content-information {
+				margin-left: 110px; 
+				padding-left: 25px;
+				border-left: 1px solid $main-color;
+				font-size: 16px;
+				height: 60px;
+			}				
+			.more-information {
+				padding-top: 20px;
+				margin-top: 0px;
+				font-size: 14px;
+				line-height: 1.5;					
+				overflow: hidden;
+				max-height: 0;
+				transition: all 0.3s ease-out;
+			}
+		}
+		// End col
+
+	}
+	//End row
+	// Start more-line
+	.more-line {
+		padding-top: 42.5px;
+		clear: both;
+		border-bottom: 1px solid $light-grey;
+		position: relative;
+		transition: all 0.5s ease ;
+		.more-button {
+			position: absolute;
+			left: 45%;
+			top: 25px;
+			height: 33px;
+			width: 130px;
+			background: $white;
+			color: $main-color;
+			border-radius: 15px;
+			border: 1px solid $light-grey;
+			transition: all 0.5s ease ;
+		}
+	}
+	// End more-line
+	// Start more-line
+	.more-line-active {
+		transition: all 0.5s ease ;			
+		border-bottom: 1px solid $orange;
+		.more-button {	
+			transition: all 0.5s ease ;			
+			border: 1px solid $orange;
+			background: $light-light-grey;
+		}
+	}
+	// End more-line-active
+}
+// End information

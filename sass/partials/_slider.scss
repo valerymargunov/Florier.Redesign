@@ -1,0 +1,86 @@
+// Start slideshow
+.slideshow-content {
+	position: relative;
+	li {
+		position: relative;
+		.caption-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right:0;
+			width: $narrow-width;
+			margin: 0 auto; 
+			.title-slide {
+				background: $white;
+				position: absolute;				
+				top: 56px;
+				left: 0;
+				width: 445px;
+				height: 103px;
+				box-shadow: 0 2px 2px $light-grey;
+				.orange-title-slide {
+					color: $orange;
+				}
+			}
+			p {
+				font-size: 20px;
+				padding-top: 18px;
+				padding-left: 20px;
+			}
+			.high-text {
+				text-transform: uppercase;
+			}
+		}		
+	}	
+	.flex-direction-nav {
+		position: absolute;
+		width: $narrow-width;
+		top: 50%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 auto;
+		list-style: none;
+		height: 100%;
+
+		a {			
+			position: absolute;
+			opacity: 0.65;
+			width: 75px;
+			height: 75px;
+			border-radius: 50%;
+			background: $white;	
+			transition: all 0.3s ease;
+			&:hover {
+				background: $orange;				
+			}
+			em {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 41px;
+				width: 21px;
+				margin: auto;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		}	
+		.flex-prev {
+			left: -23px;
+			em {
+				right: 5px;
+				background-image: url('../new-images/left-gray-arrow.png');
+			}
+		}
+		.flex-next {
+			right: -23px;
+			em {
+				left: 5px;
+				background-image: url('../new-images/right-gray-arrow.png');
+			}
+		}		
+	}
+}
+// End slideshow

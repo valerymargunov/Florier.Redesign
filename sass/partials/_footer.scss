@@ -1,0 +1,69 @@
+// Start footer
+.footer {		
+	background: $footer-color;
+	padding-top: 30px;
+	margin-top: 53px;
+	height: 125px;
+	.footer-content {
+		width: $narrow-width;
+		margin: 0 auto;
+		line-height: 1.7;
+		.bolder {
+			font-weight: bolder;
+			padding-bottom: 17px;
+		}
+		.social-section {
+			margin-left: 188px;
+			float: left;
+			p {
+				color: $white;
+				margin-bottom: 15px;
+			}
+			ul {
+				list-style: none;
+				li {
+					display: inline-block;
+					margin: 3px;
+				}
+			}	
+		}
+		.for-people {
+			margin-left: 65px;
+			display: inline-block;
+			ul {
+				list-style: none;
+				li {
+					display: block;
+					margin: 3px;						
+					p {
+						color: $white;
+						line-height: 1;							
+					}
+					a {
+						text-decoration: none;
+						color: $white;
+						transition: all 0.3s ease;
+						padding-bottom: 12px;
+						&:hover {
+							color: $dark-orange;
+						}
+					}
+				}
+			}
+		}
+		.pays {
+			margin-right: 188px;
+			float: right;
+			display: inline-block;
+			.webpay {
+				display: inline-block;
+			}
+			.belki {
+				margin-top: 5px;
+				margin-left:15px;
+				display: inline-block;					
+			}
+		}
+	}
+}
+// End footer

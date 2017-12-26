@@ -1,0 +1,23 @@
+// Start main information
+.main-information {
+	width: $narrow-width;
+	margin: 15px auto;
+	line-height: 1.7;
+	p {
+		padding-top: 25px;			
+	}
+	a {
+		color: #0066CC;
+		text-decoration: underline;
+		transition: all 0.3s ease;
+		&:hover {
+			color: $orange;
+			text-decoration: none;
+		}
+	}
+	ul {
+		padding-left: 15px;
+	}
+
+}
+// End main information

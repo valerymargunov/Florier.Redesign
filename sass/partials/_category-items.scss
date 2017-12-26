@@ -1,0 +1,62 @@
+// Start categories
+.categories {
+	width: $narrow-width;
+	margin: 0 auto;		
+	// Start categories list
+	.categories-list {
+		list-style: none;
+		// Start category item
+		.category-item {
+			display: inline-block;
+			width: 12%;
+			a {
+				display: inline-block;
+				color: $main-color;
+				text-decoration: none;
+				transition: all 0.3s ease;
+				position: relative;
+				height: 160px;
+				position: relative;
+				width: 100%;
+				// Start item image
+				.item-image {		
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;				
+					height: 120px;
+					img {
+						display: block;
+						margin: 0 auto;
+						position: absolute;
+					    bottom: 0;
+					    left: 0;
+					    right: 0;
+						transition: all 0.3s ease;
+					}
+				}
+				// End item image
+				// Start category name					
+				.category-name {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					text-align: center;
+				}
+				// End category name
+				// Start hover effect for item
+				&:hover {						
+					color: $orange;
+					img {							
+						bottom: 7px;
+					}
+				}
+				// End hover effect for item
+			}
+		}
+		// End category item
+	}
+	// End categories list
+}
+// End categories

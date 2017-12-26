@@ -1,0 +1,178 @@
+// Start header
+.header {
+	width: $main-width;
+	border-bottom: 1px solid $light-grey;
+	height: 80px;
+	.header-container{
+		width: $narrow-width;
+		height: 70px;
+		margin: 0 auto;			
+		// Start separator
+		.separator {
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 25px;
+				height: 30px;
+				right: 0;				
+				border-right: 1px solid $main-color;
+			}
+		}
+		// End separator
+		// Start logo
+		.logo {
+			height: 100%;			
+			float: left;
+			img {
+				height: 30px;
+				padding: 25px 25px 0 0;
+			}
+		}
+		// End logo
+		// Start title
+		.title {
+			height: 100%;
+			padding: 0 25px;
+			float: left;
+			text-transform: uppercase;
+			.orange-title{
+				margin-top: 25px;
+				color: $orange;
+			}
+		}
+		// End title
+		// Start place
+		.place {
+			float: left;
+			margin-left: 25px;
+			position: relative;
+			&:before{
+				position: absolute;
+				content: "";
+				margin-top: 25px;
+				top: 5px;
+				bottom: 10px;
+				left: 0px;
+				height: 18px;
+				width: 18px;
+				background-image: url('../new-images/arrow.png');
+			}
+			&:after{
+				position: absolute;
+				content: "";
+				margin-top: 25px;
+				top: 10px;
+				bottom: 10px;
+				right: -10px;
+				height: 9px;
+				width: 16px;
+				background-repeat: no-repeat;
+				background-image: url('../new-images/arrow-down-gray.png');
+			}
+			.places{
+				appearance: none;
+				font-family: $main-font;
+				text-decoration: underline;
+				border: 0;
+				margin-top: 15px;				
+				overflow: hidden;
+				padding: 18px 26px;			   
+				white-space: nowrap;				
+				outline: none;								
+			}
+			select::-ms-expand {
+			    display: none;
+			}				
+
+		}
+		// End place
+		// Start active place
+		.active-place {
+			.places {
+				color: $orange;
+				text-decoration: none;
+			}
+			&:after{
+				background-image: url('../new-images/arrow-down.png');
+			}				
+
+		}
+		// End active place
+		// Start user panel
+		.user-panel {
+			float: right;			
+			.heart {		
+				float: left;		
+				margin-top: 28px;
+				display: inline-block;
+				background-repeat: no-repeat;
+				height: 23px;
+				width: 25px;
+				background-size: cover;
+				transition: all 0.5s ease;
+				background-image: url('../new-images/heart-light-contour.png');
+				&:hover {
+					background-image: url('../new-images/heart-contour.png');
+				}
+			}
+			button {
+				display: block;
+				float: left;
+				margin-top: 23px;
+				margin-left: 20px;
+				height: 33px;
+			}
+			.orange-button {
+				width: 90px;
+			}
+			.green-button {					
+				width: 180px;
+			}
+		}
+		// End user panel
+		// Start registered
+		.registered {			
+			.heart {	
+				font-style: normal;
+				color: $white;		
+				transition: all 0.5s ease;	
+				background-image: url('../new-images/heart-light-orange.png');
+				&:hover {
+					background-image: url('../new-images/heart-orange.png');
+				}
+				span {
+					display: inline-block;
+					padding-top: 4px;
+					padding-left: 4px;
+				}
+			}
+			button {
+				background: transparent;
+				border: 1px solid $orange;
+				color: $main-color;
+				transition: all 0.3s ease;
+				&:hover {
+					background: $light-light-grey;
+					border: 1px solid $dark-orange;
+				}
+			}						
+			.user-button {
+				color: #0066CC;
+				border: none;
+				text-decoration: underline;
+				transition: all 0.3s ease;
+				padding-left: 20px;
+				margin-left: 0;
+				&:hover {
+					background: transparent;
+					border: none;
+					color: $dark-orange;
+					text-decoration: none;
+				}
+			}						
+		}
+		// End registered
+	}
+}
+// End header

@@ -1,0 +1,41 @@
+// Start nav
+.nav {
+	border-bottom: 1px solid $light-grey;		
+	ul {
+		margin: 0 auto;
+		width: $narrow-width;
+		list-style: none;						
+		li {
+			display: inline-block;				
+			padding-left: 40px;
+			&:first-child {
+				padding: 0;
+			}
+			a {
+				line-height: 46px;
+				height: 48px;
+				display: inline-block;
+				text-decoration: none;
+				color: $main-color;					
+				border-color: $orange;
+				transition: all 0.3s ease;
+				&:hover {
+					height: 46px;
+					color: $orange;
+					border-bottom: 2px solid $orange;
+				}
+			}
+			.beta {
+				position: relative;
+				&:after {
+					font-size: 8px;
+					content: 'Beta';
+					position: absolute;
+					top: -8px;
+					right: 0;
+				}
+			}
+		}
+	}
+}
+// End nav

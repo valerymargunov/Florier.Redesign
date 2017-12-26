@@ -1,0 +1,29 @@
+// Start best of
+.best-of {
+	display: block;
+	clear: both;
+	height: 335px;
+	background-image: url('../new-images/the-best.png');
+	border-bottom: 1px solid $light-grey;
+	.content {
+		width: $narrow-width;
+		margin: 0 auto;
+		height: 100%;
+		position: relative;
+		h2 {
+			padding-top: 94px;
+			text-transform: uppercase;
+			font-size: 33px;
+		}
+		.orange-text {
+			color: $orange;
+		}
+		img {			
+			position: absolute;
+			left: 0;
+			bottom: 66px;
+			height: 30px;
+		}
+	}
+}
+// End best of
