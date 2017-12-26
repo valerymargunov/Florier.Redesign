@@ -1,7 +1,10 @@
 // Start categories
 .categories {
 	width: $narrow-width;
-	margin: 0 auto;		
+	margin: 0 auto;	
+	.sub-title {
+		margin-top: 76.5px
+	}	
 	// Start categories list
 	.categories-list {
 		list-style: none;

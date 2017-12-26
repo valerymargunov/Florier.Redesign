@@ -4,16 +4,16 @@
 	margin: 0 auto;
 	.instagram-content {
 		position: relative;
-		padding: 0 40px;
 		.instagram-list {
+			padding: 0 43px;
 			list-style: none;
 			.instagram-item {
 				display: inline-block;
-				width: 16%;
-				height: 174px;
+				height: 175px;
+				width: 175px;
+				margin-left: 29px;
 				a {
 					display: inline-block;
-					margin: 10px;
 					img {
 						width: 100%;
 						height: 100%;
@@ -23,14 +23,14 @@
 		}
 		.arrow {			
 			position: absolute;
-			top: 40%;
+			top: 36%;
 			background: transparent;
 		}
 		.left-arrow {
-			left: 0px;
+			left: -16px;
 		}
 		.right-arrow {
-			right: 20px;
+			right: -16px;
 		}		
 	}
 }

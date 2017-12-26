@@ -47,6 +47,7 @@
 			float: left;
 			margin-left: 25px;
 			position: relative;
+			cursor: pointer;
 			&:before{
 				position: absolute;
 				content: "";
@@ -64,20 +65,22 @@
 				margin-top: 25px;
 				top: 10px;
 				bottom: 10px;
-				right: -10px;
+				right: 0px;
 				height: 9px;
 				width: 16px;
 				background-repeat: no-repeat;
 				background-image: url('../new-images/arrow-down-gray.png');
 			}
 			.places{
+				cursor: pointer;
 				appearance: none;
 				font-family: $main-font;
 				text-decoration: underline;
 				border: 0;
 				margin-top: 15px;				
 				overflow: hidden;
-				padding: 18px 26px;			   
+				padding: 18px 26px;
+				padding-right: 36px;			   
 				white-space: nowrap;				
 				outline: none;								
 			}
@@ -102,7 +105,8 @@
 		// Start user panel
 		.user-panel {
 			float: right;			
-			.heart {		
+			.heart {	
+				cursor: pointer;	
 				float: left;		
 				margin-top: 28px;
 				display: inline-block;
@@ -134,6 +138,7 @@
 		// Start registered
 		.registered {			
 			.heart {	
+				cursor: pointer;
 				font-style: normal;
 				color: $white;		
 				transition: all 0.5s ease;	

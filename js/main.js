@@ -15,10 +15,22 @@ $(document).ready(function(){
     prevText: "<em></em>",
     nextText: "<em></em>"
   });
-  $('.flexslider').flexslider({
-    animation: "slide",
-    animationLoop: false,
-    itemWidth: 280,
-    itemMargin: 4
+  $('#popular-items').slick({
+    slide: 'li',
+    lazyLoad: 'ondemand',
+    variableWidth: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: $('.left-arrow'),
+    nextArrow: $('.right-arrow')
+  });
+  $('#instagram').slick({
+    slide: 'li',
+    lazyLoad: 'ondemand',
+    variableWidth: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    prevArrow: $('#prev'),
+    nextArrow: $('#next')
   });
 });

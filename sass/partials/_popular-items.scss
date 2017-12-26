@@ -3,37 +3,39 @@
 	width: $narrow-width;		
 	margin: 0 auto;
 	position: relative;
-	min-height: 450px;
 	.popular-items-list {
 		list-style: none;
-		padding-left: 44px;
-		padding-right: 44px;
-		.popular-item {				
-			width: 25%;
+		padding-left: 39px;
+		padding-right: 39px;		
+		.popular-item {			
+			margin-left: 24px;
 			float: left;
 			display: block;				
-			position: relative;				
+			position: relative;
 			// Start popular item
 			.popular-item-content {
-				margin: 10px;
-				border: 1px solid $light-grey;transition: all 0.5s ease-out;
+				width: 280px;
+				border: 1px solid $light-grey;
+				transition: all 0.5s ease-out;
+				margin-bottom: 10px;
 				&:hover {
-					box-shadow: 2px 2px 3px rgba(51,51,51,0.5);
+					box-shadow: 0 2px 4px rgba(51,51,51,0.35);
 				}
 				.image-item {
 					position: relative;
 					img {
-						max-width: 100%;
+						height: 262px;
 					}
 					// Start heart
 					.heart {
 						position: absolute;
-						top: 30px;
-						right: 30px;
+						top: 16px;
+						right: 16px;
 						content: url('../new-images/heart-orange.png');
-						height: 27px;
-						width: 27px;
+						height: 23px;
+						width: 25px;
 						z-index: 1;
+						cursor: pointer;
 						&:hover {
 							content: url('../new-images/broken-heart.png');
 						}
@@ -62,14 +64,18 @@
 						}
 						p {
 							margin-left: 15px;
+							line-height: 1.4;
 						}
 					}
 				}
 				// Start details
 				.details {
-					margin: 10px;
+					height: 119px;					
+					padding-right: 12px;
 					// Start stars
-					.stars {							
+					.stars {
+						padding-top: 10px;
+						padding-left: 15px;
 						list-style: none;
 						.star {
 							display: inline-block;
@@ -90,16 +96,14 @@
 					// End stars
 					// Start delivers
 					.delivers {
-						font-size: 9pt;
 						color: $dark-green;
-						margin-top: 10px;
-							height: 30px;
+						margin-top: 7px;
+						height: 27px;
+						font-size: 12px;
+						padding-left: 15px;
 						.type-of-deliver {								
-							word-wrap: true;
-							width: 25%;
 							height: 30px;
-							float: left;								
-							word-wrap: break-word;
+							float: left;							
 							.explain {
 								transition: opacity 1s ease-out;
 							    opacity: 0; 
@@ -120,9 +124,13 @@
 								    overflow: hidden;
 								}
 							}
+							
 						}
+						.deliver {
+							margin-left: 21px;
+							margin-right: 25px;
+						}								
 						.date-of-deliver {
-							width: 50%;
 							float: left;
 						}
 					}
@@ -131,11 +139,14 @@
 					.buy-section {
 						margin-top: 10px;
 						.price {
-							width: 50%;
+							font-size: 20px;
+							width: 140px;
 							display: inline-block;
+							text-align: center;
 						}
 						.buy-button {
-							width: 45%;
+							height: 33px;
+							width: 123px;
 							display: inline-block;
 						}
 					}
@@ -153,10 +164,10 @@
 			background: transparent;
 		}
 		.left-arrow {
-			left: 0px;
+			left: -16px;
 		}
 		.right-arrow {
-			right: 0px;
+			right: -16px;
 		}
 }
 // End popular items

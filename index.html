@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Florier</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css"/>
 </head>
 <body>
 	<div class="container">
@@ -34,8 +35,8 @@
 					<em class="heart"></em>
 					<button class="orange-button">Войти</button>
 					<button class="green-button">Создать магазин</button>
-				</div>
- -->				<!-- End user panel -->
+				</div> -->
+				<!-- End user panel -->
 				<!-- Start registered user panel -->
 				<div class="user-panel registered">
 					<em class="heart"><span>99</span></em>
@@ -220,10 +221,10 @@
 			</ul>
 		</div>
 		<!-- End categories -->
-		<!-- Start popular items -->
+		<!-- Start popular items -->		
 		<div class="popular-items">
 			<h3 class="sub-title">Популярные товары</h3>
-			<ul class="popular-items-list">
+			<ul id="popular-items" class="popular-items-list">				
 				<li class="popular-item">
 					<!-- Start popular item content -->
 					<div class="popular-item-content">
@@ -247,17 +248,14 @@
 							<!-- Start delivers -->
 							<div class="delivers">
 								<div class="type-of-deliver">
-									<div class="explain">Само-
-									вывоз</div>
+									<div class="explain">Само-<br>вывоз</div>
 									<div class="icon"><img src="new-images/shop.png" alt="Самовывоз"></div>
 								</div>
-								<div class="type-of-deliver">
+								<div class="type-of-deliver deliver">
 									<div class="explain">Курьер</div>
 									<div class="icon"><img src="new-images/deliver.png" alt="Курьер"></div>
 								</div>
-								<div class="date-of-deliver">
-									Сегодня, завтра, другой день
-								</div>
+								<div class="date-of-deliver">Сегодня, завтра,<br>другой день</div>
 							</div>
 							<!-- End delivers -->
 							<!-- Start buy-section -->
@@ -271,7 +269,50 @@
 					</div>
 					<!-- End popular item content -->
 				</li>
-				
+				<li class="popular-item">
+					<!-- Start popular item content -->
+					<div class="popular-item-content">
+						<!-- Start image item -->
+						<div class="image-item">
+							<em></em>
+							<img src="new-images/item-1.png" alt="Популярные товары 1">
+						</div>
+						<!-- End image item -->
+						<!-- Start details of item -->
+						<div class="details">
+							<!-- Start stars -->
+							<ul class="stars">
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star"><em></em></li>
+								<li class="star empty"><em></em></li>
+							</ul>
+							<!-- End stars -->
+							<!-- Start delivers -->
+							<div class="delivers">
+								<div class="type-of-deliver">
+									<div class="explain">Само-<br>вывоз</div>
+									<div class="icon"><img src="new-images/shop.png" alt="Самовывоз"></div>
+								</div>
+								<div class="type-of-deliver deliver">
+									<div class="explain">Курьер</div>
+									<div class="icon"><img src="new-images/deliver.png" alt="Курьер"></div>
+								</div>
+								<div class="date-of-deliver">Сегодня, завтра,<br>другой день</div>
+							</div>
+							<!-- End delivers -->
+							<!-- Start buy-section -->
+							<div class="buy-section">
+								<span class="price">999.99 BYN</span>	
+								<button class="orange-button buy-button">Купить</button>
+							</div>
+							<!-- End buy-section -->
+						</div>
+						<!-- End details of item -->
+					</div>
+					<!-- End popular item content -->
+				</li>
 				<li class="popular-item">
 					<!-- Start popular item content -->
 					<div class="popular-item-content">						
@@ -295,17 +336,14 @@
 							<!-- Start delivers -->
 							<div class="delivers">
 								<div class="type-of-deliver">
-									<div class="explain">Само-
-									вывоз</div>
+									<div class="explain">Само-<br>вывоз</div>
 									<div class="icon"><img src="new-images/shop.png" alt="Самовывоз"></div>
 								</div>
-								<div class="type-of-deliver">
+								<div class="type-of-deliver deliver">
 									<div class="explain">Курьер</div>
 									<div class="icon"><img src="new-images/deliver.png" alt="Курьер"></div>
 								</div>
-								<div class="date-of-deliver">
-									Сегодня, завтра, другой день
-								</div>
+								<div class="date-of-deliver">Сегодня, завтра,<br>другой день</div>
 							</div>
 							<!-- End delivers -->
 							<!-- Start buy-section -->
@@ -353,17 +391,14 @@
 							<!-- Start delivers -->
 							<div class="delivers">
 								<div class="type-of-deliver">
-									<div class="explain">Само-
-									вывоз</div>
+									<div class="explain">Само-<br>вывоз</div>
 									<div class="icon"><img src="new-images/shop.png" alt="Самовывоз"></div>
 								</div>
-								<div class="type-of-deliver">
+								<div class="type-of-deliver deliver">
 									<div class="explain">Курьер</div>
 									<div class="icon"><img src="new-images/deliver.png" alt="Курьер"></div>
 								</div>
-								<div class="date-of-deliver">
-									Сегодня, завтра, другой день
-								</div>
+								<div class="date-of-deliver">Сегодня, завтра,<br>другой день</div>
 							</div>
 							<!-- End delivers -->
 							<!-- Start buy-section -->
@@ -411,17 +446,14 @@
 							<!-- Start delivers -->
 							<div class="delivers">
 								<div class="type-of-deliver">
-									<div class="explain">Само-
-									вывоз</div>
+									<div class="explain">Само-<br>вывоз</div>
 									<div class="icon"><img src="new-images/shop.png" alt="Самовывоз"></div>
 								</div>
-								<div class="type-of-deliver">
+								<div class="type-of-deliver deliver">
 									<div class="explain">Курьер</div>
 									<div class="icon"><img src="new-images/deliver.png" alt="Курьер"></div>
 								</div>
-								<div class="date-of-deliver">
-									Сегодня, завтра, другой день
-								</div>
+								<div class="date-of-deliver">Сегодня, завтра,<br>другой день</div>
 							</div>
 							<!-- End delivers -->
 							<!-- Start buy-section -->
@@ -468,7 +500,11 @@
 		<div class="instagram-section">
 			<h3 class="sub-title">инстаграм: #florier</h3>
 			<div class="instagram-content">
-				<ul class="instagram-list">
+				<ul id="instagram" class="instagram-list">
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
+					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
 					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
 					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
 					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
@@ -476,8 +512,8 @@
 					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
 					<li class="instagram-item"><a href="#"><img src="new-images/inst.png" alt="instagram 1"></a></li>
 				</ul>
-				<button class="arrow left-arrow"><img src="new-images/left-gray-arrow.png" alt="Previous"></button>
-				<button class="arrow right-arrow"><img src="new-images/right-gray-arrow.png" alt="Next"></button>	
+				<button id="prev" class="arrow left-arrow"><img src="new-images/left-gray-arrow.png" alt="Previous"></button>
+				<button id="next" class="arrow right-arrow"><img src="new-images/right-gray-arrow.png" alt="Next"></button>	
 			</div>
 		</div>
 		<!-- End instagrm -->
@@ -523,6 +559,7 @@
 	</div>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/flexslider/2.6.2/jquery.flexslider.js"></script>
+	<script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/functions.js"></script>
 </body>

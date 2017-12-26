@@ -30,7 +30,8 @@ button {
   outline: none;
   font-family: Comfortaa-Regular;
   background: #333333;
-  color: #ffffff; }
+  color: #ffffff;
+  cursor: pointer; }
 
 .container {
   min-width: 1280px;
@@ -92,7 +93,8 @@ button {
     .header .header-container .place {
       float: left;
       margin-left: 25px;
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
       .header .header-container .place:before {
         position: absolute;
         content: "";
@@ -109,12 +111,13 @@ button {
         margin-top: 25px;
         top: 10px;
         bottom: 10px;
-        right: -10px;
+        right: 0px;
         height: 9px;
         width: 16px;
         background-repeat: no-repeat;
         background-image: url("../new-images/arrow-down-gray.png"); }
       .header .header-container .place .places {
+        cursor: pointer;
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none;
@@ -124,6 +127,7 @@ button {
         margin-top: 15px;
         overflow: hidden;
         padding: 18px 26px;
+        padding-right: 36px;
         white-space: nowrap;
         outline: none; }
       .header .header-container .place select::-ms-expand {
@@ -136,6 +140,7 @@ button {
     .header .header-container .user-panel {
       float: right; }
       .header .header-container .user-panel .heart {
+        cursor: pointer;
         float: left;
         margin-top: 28px;
         display: inline-block;
@@ -164,6 +169,7 @@ button {
       .header .header-container .user-panel .green-button {
         width: 180px; }
     .header .header-container .registered .heart {
+      cursor: pointer;
       font-style: normal;
       color: #ffffff;
       -webkit-transition: all 0.5s ease;
@@ -391,7 +397,11 @@ button {
         padding-left: 25px;
         border-left: 1px solid #333333;
         font-size: 16px;
-        height: 60px; }
+        height: 60px;
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
       .information .row .col .more-information {
         padding-top: 20px;
         margin-top: 0px;
@@ -445,6 +455,8 @@ button {
 .categories {
   width: 1280px;
   margin: 0 auto; }
+  .categories .sub-title {
+    margin-top: 76.5px; }
   .categories .categories-list {
     list-style: none; }
     .categories .categories-list .category-item {
@@ -493,40 +505,41 @@ button {
 .popular-items {
   width: 1280px;
   margin: 0 auto;
-  position: relative;
-  min-height: 450px; }
+  position: relative; }
   .popular-items .popular-items-list {
     list-style: none;
-    padding-left: 44px;
-    padding-right: 44px; }
+    padding-left: 39px;
+    padding-right: 39px; }
     .popular-items .popular-items-list .popular-item {
-      width: 25%;
+      margin-left: 24px;
       float: left;
       display: block;
       position: relative; }
       .popular-items .popular-items-list .popular-item .popular-item-content {
-        margin: 10px;
+        width: 280px;
         border: 1px solid #CCCCCC;
         -webkit-transition: all 0.5s ease-out;
         -o-transition: all 0.5s ease-out;
         -moz-transition: all 0.5s ease-out;
-        transition: all 0.5s ease-out; }
+        transition: all 0.5s ease-out;
+        margin-bottom: 10px; }
         .popular-items .popular-items-list .popular-item .popular-item-content:hover {
-          -webkit-box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.5);
-             -moz-box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.5);
-                  box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.5); }
+          -webkit-box-shadow: 0 2px 4px rgba(51, 51, 51, 0.35);
+             -moz-box-shadow: 0 2px 4px rgba(51, 51, 51, 0.35);
+                  box-shadow: 0 2px 4px rgba(51, 51, 51, 0.35); }
         .popular-items .popular-items-list .popular-item .popular-item-content .image-item {
           position: relative; }
           .popular-items .popular-items-list .popular-item .popular-item-content .image-item img {
-            max-width: 100%; }
+            height: 262px; }
           .popular-items .popular-items-list .popular-item .popular-item-content .image-item .heart {
             position: absolute;
-            top: 30px;
-            right: 30px;
+            top: 16px;
+            right: 16px;
             content: url("../new-images/heart-orange.png");
-            height: 27px;
-            width: 27px;
-            z-index: 1; }
+            height: 23px;
+            width: 25px;
+            z-index: 1;
+            cursor: pointer; }
             .popular-items .popular-items-list .popular-item .popular-item-content .image-item .heart:hover {
               content: url("../new-images/broken-heart.png"); }
           .popular-items .popular-items-list .popular-item .popular-item-content .image-item .empty {
@@ -547,10 +560,14 @@ button {
               margin-top: 22px;
               text-decoration: underline; }
             .popular-items .popular-items-list .popular-item .popular-item-content .image-item .more-information-item p {
-              margin-left: 15px; }
+              margin-left: 15px;
+              line-height: 1.4; }
         .popular-items .popular-items-list .popular-item .popular-item-content .details {
-          margin: 10px; }
+          height: 119px;
+          padding-right: 12px; }
           .popular-items .popular-items-list .popular-item .popular-item-content .details .stars {
+            padding-top: 10px;
+            padding-left: 15px;
             list-style: none; }
             .popular-items .popular-items-list .popular-item .popular-item-content .details .stars .star {
               display: inline-block; }
@@ -563,16 +580,14 @@ button {
             .popular-items .popular-items-list .popular-item .popular-item-content .details .stars .empty em {
               background-image: url("../new-images/star-empty.png"); }
           .popular-items .popular-items-list .popular-item .popular-item-content .details .delivers {
-            font-size: 9pt;
             color: #27AE60;
-            margin-top: 10px;
-            height: 30px; }
+            margin-top: 7px;
+            height: 27px;
+            font-size: 12px;
+            padding-left: 15px; }
             .popular-items .popular-items-list .popular-item .popular-item-content .details .delivers .type-of-deliver {
-              word-wrap: true;
-              width: 25%;
               height: 30px;
-              float: left;
-              word-wrap: break-word; }
+              float: left; }
               .popular-items .popular-items-list .popular-item .popular-item-content .details .delivers .type-of-deliver .explain {
                 -webkit-transition: opacity 1s ease-out;
                 -o-transition: opacity 1s ease-out;
@@ -593,27 +608,33 @@ button {
                 opacity: 0;
                 height: 0;
                 overflow: hidden; }
+            .popular-items .popular-items-list .popular-item .popular-item-content .details .delivers .deliver {
+              margin-left: 21px;
+              margin-right: 25px; }
             .popular-items .popular-items-list .popular-item .popular-item-content .details .delivers .date-of-deliver {
-              width: 50%;
               float: left; }
           .popular-items .popular-items-list .popular-item .popular-item-content .details .buy-section {
             margin-top: 10px; }
             .popular-items .popular-items-list .popular-item .popular-item-content .details .buy-section .price {
-              width: 50%;
-              display: inline-block; }
+              font-size: 20px;
+              width: 140px;
+              display: inline-block;
+              text-align: center; }
             .popular-items .popular-items-list .popular-item .popular-item-content .details .buy-section .buy-button {
-              width: 45%;
+              height: 33px;
+              width: 123px;
               display: inline-block; }
   .popular-items .arrow {
     position: absolute;
     top: 50%;
     background: transparent; }
   .popular-items .left-arrow {
-    left: 0px; }
+    left: -16px; }
   .popular-items .right-arrow {
-    right: 0px; }
+    right: -16px; }
 
 .best-of {
+  margin-top: 58px;
   display: block;
   clear: both;
   height: 335px;
@@ -639,7 +660,8 @@ button {
 .main-information {
   width: 1280px;
   margin: 15px auto;
-  line-height: 1.7; }
+  line-height: 1.7;
+  font-size: 16px; }
   .main-information p {
     padding-top: 25px; }
   .main-information a {
@@ -659,28 +681,28 @@ button {
   width: 1280px;
   margin: 0 auto; }
   .instagram-section .instagram-content {
-    position: relative;
-    padding: 0 40px; }
+    position: relative; }
     .instagram-section .instagram-content .instagram-list {
+      padding: 0 43px;
       list-style: none; }
       .instagram-section .instagram-content .instagram-list .instagram-item {
         display: inline-block;
-        width: 16%;
-        height: 174px; }
+        height: 175px;
+        width: 175px;
+        margin-left: 29px; }
         .instagram-section .instagram-content .instagram-list .instagram-item a {
-          display: inline-block;
-          margin: 10px; }
+          display: inline-block; }
           .instagram-section .instagram-content .instagram-list .instagram-item a img {
             width: 100%;
             height: 100%; }
     .instagram-section .instagram-content .arrow {
       position: absolute;
-      top: 40%;
+      top: 36%;
       background: transparent; }
     .instagram-section .instagram-content .left-arrow {
-      left: 0px; }
+      left: -16px; }
     .instagram-section .instagram-content .right-arrow {
-      right: 20px; }
+      right: -16px; }
 
 .footer {
   background: #3B4749;
