@@ -19,6 +19,7 @@
 				width: 445px;
 				height: 103px;
 				border-radius: 4px;
+				border: 1px solid $light-grey;
 				.orange-title-slide {
 					color: $orange;
 				}
@@ -39,7 +40,7 @@
 	.flex-direction-nav {
 		position: absolute;
 		width: $narrow-width;
-		top: 50%;
+		top: 40%;
 		left: 0;
 		right: 0;
 		bottom: 0;

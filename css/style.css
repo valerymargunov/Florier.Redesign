@@ -204,7 +204,9 @@ button {
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease;
       margin-left: 20px;
-      width: 180px; }
+      width: 180px;
+      padding-left: 0;
+      text-align: left; }
       .header .header-container .registered .user-button:hover {
         background: transparent;
         border: none;
@@ -263,7 +265,8 @@ button {
         height: 103px;
         -webkit-border-radius: 4px;
            -moz-border-radius: 4px;
-                border-radius: 4px; }
+                border-radius: 4px;
+        border: 1px solid #CCCCCC; }
         .slideshow-content li .caption-wrapper .title-slide .orange-title-slide {
           color: #FF883F; }
       .slideshow-content li .caption-wrapper p {
@@ -277,7 +280,7 @@ button {
   .slideshow-content .flex-direction-nav {
     position: absolute;
     width: 1280px;
-    top: 50%;
+    top: 40%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -424,7 +427,7 @@ button {
     transition: all 0.5s ease; }
     .information .more-line .more-button {
       position: absolute;
-      left: 45%;
+      left: 46.5%;
       top: 25px;
       height: 33px;
       width: 130px;
@@ -586,7 +589,7 @@ button {
               background: url("../new-images/star.png") repeat-x; }
           .popular-items .popular-items-list .popular-item .popular-item-content .details .delivers {
             color: #27AE60;
-            margin-top: 7px;
+            margin-top: 17px;
             height: 27px;
             font-size: 12px;
             padding-left: 15px; }
@@ -620,7 +623,8 @@ button {
             .popular-items .popular-items-list .popular-item .popular-item-content .details .delivers .date-of-deliver {
               float: left; }
           .popular-items .popular-items-list .popular-item .popular-item-content .details .buy-section {
-            margin-top: 10px; }
+            margin-top: 7px;
+            padding-bottom: 12px; }
             .popular-items .popular-items-list .popular-item .popular-item-content .details .buy-section .price {
               font-size: 20px;
               width: 140px;
@@ -628,6 +632,7 @@ button {
               text-align: center;
               vertical-align: sub; }
             .popular-items .popular-items-list .popular-item .popular-item-content .details .buy-section .buy-button {
+              font-size: 14px;
               height: 33px;
               width: 123px;
               font-weight: 500;
