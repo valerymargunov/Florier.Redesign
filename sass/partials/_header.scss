@@ -157,6 +157,7 @@
 				border: 1px solid $orange;
 				color: $main-color;
 				transition: all 0.3s ease;
+				width: 90px;
 				&:hover {
 					background: $light-light-grey;
 					border: 1px solid $dark-orange;
@@ -167,8 +168,8 @@
 				border: none;
 				text-decoration: underline;
 				transition: all 0.3s ease;
-				padding-left: 20px;
-				margin-left: 0;
+				margin-left: 20px;
+				width: 180px;
 				&:hover {
 					background: transparent;
 					border: none;

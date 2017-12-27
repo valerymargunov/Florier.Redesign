@@ -14,7 +14,7 @@ gulp.task('sass', function(){
                     "safari < 6",
                     "firefox < 49",
                     "opera < 12.1",
-                    "explorer > 11",
+                    "explorer > 9",
                     "iOS >= 6"
                 ]
             }))

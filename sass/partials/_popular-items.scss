@@ -12,6 +12,7 @@
 			float: left;
 			display: block;				
 			position: relative;
+			    outline: none;
 			// Start popular item
 			.popular-item-content {
 				width: 280px;
@@ -31,19 +32,19 @@
 						position: absolute;
 						top: 16px;
 						right: 16px;
-						content: url('../new-images/heart-orange.png');
+						content: url('../new-images/popular-heart.png');
 						height: 23px;
 						width: 25px;
 						z-index: 1;
 						cursor: pointer;
 						&:hover {
-							content: url('../new-images/broken-heart.png');
+							content: url('../new-images/popular-heart-broken.png');
 						}
 					}
 					.empty {
-						content: url('../new-images/heart-contour.png');
+						content: url('../new-images/popular-heart-empty.png');
 						&:hover {
-							content: url('../new-images/heart-orange.png');
+							content: url('../new-images/popular-heart.png');
 						}
 					}
 					// End heart
@@ -76,21 +77,20 @@
 					.stars {
 						padding-top: 10px;
 						padding-left: 15px;
-						list-style: none;
-						.star {
-							display: inline-block;
-							em {
-								display: inline-block;
-								width: 15px;
-								height: 15px;
-								background-repeat: no-repeat;
-								background-image:url('../new-images/star.png');
-							}
+						height: 15px;
+						width: 80px;
+						position: relative;
+						.empty {		
+							position: absolute;
+							width: 100%;
+							height: 100%;				
+							background:url('../new-images/star-empty.png') repeat-x;							
 						}
-						.empty {
-							em {
-								background-image:url('../new-images/star-empty.png');
-							}
+						.raiting {
+							position: absolute;
+							width: 100%;
+							height: 100%;					
+							background:url('../new-images/star.png') repeat-x;
 						}
 					}
 					// End stars
@@ -103,6 +103,7 @@
 						padding-left: 15px;
 						.type-of-deliver {								
 							height: 30px;
+							margin-top: 2px;
 							float: left;							
 							.explain {
 								transition: opacity 1s ease-out;
@@ -143,10 +144,12 @@
 							width: 140px;
 							display: inline-block;
 							text-align: center;
+							vertical-align: sub;
 						}
 						.buy-button {
 							height: 33px;
 							width: 123px;
+							font-weight: 500;
 							display: inline-block;
 						}
 					}
@@ -158,16 +161,17 @@
 		}
 		// End popular item 
 	}
-	.arrow {			
+	.arrow {	
+			padding: 0;		
 			position: absolute;
 			top: 50%;
 			background: transparent;
 		}
 		.left-arrow {
-			left: -16px;
+			left: 0;
 		}
 		.right-arrow {
-			right: -16px;
+			right: 0;
 		}
 }
 // End popular items

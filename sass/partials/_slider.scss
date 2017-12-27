@@ -17,7 +17,7 @@
 				left: 0;
 				width: 445px;
 				height: 103px;
-				box-shadow: 0 2px 2px $light-grey;
+				border-radius: 4px;
 				.orange-title-slide {
 					color: $orange;
 				}
@@ -30,7 +30,10 @@
 			.high-text {
 				text-transform: uppercase;
 			}
-		}		
+		}	
+		img {
+			border-bottom: 1px solid $light-grey;
+		}	
 	}	
 	.flex-direction-nav {
 		position: absolute;
@@ -42,6 +45,7 @@
 		margin: 0 auto;
 		list-style: none;
 		height: 100%;
+		overflow:hidden;
 
 		a {			
 			position: absolute;
