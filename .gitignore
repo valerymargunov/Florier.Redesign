@@ -5,3 +5,6 @@ node_modules/flexslider/*
 !node_modules/jquery/
 node_modules/jquery/*
 !node_modules/jquery/dist/
+!node_modules/slick-carousel/
+node_modules/slick-carousel/*
+!node_modules/slick-carousel/slick/
