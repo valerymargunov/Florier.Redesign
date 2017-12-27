@@ -1,6 +1,7 @@
 // Start slideshow
 .slideshow-content {
 	position: relative;
+	overflow: hidden;
 	li {
 		position: relative;
 		.caption-wrapper {
@@ -45,8 +46,6 @@
 		margin: 0 auto;
 		list-style: none;
 		height: 100%;
-		overflow:hidden;
-
 		a {			
 			position: absolute;
 			opacity: 0.65;
