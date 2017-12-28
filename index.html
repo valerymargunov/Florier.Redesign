@@ -60,7 +60,7 @@
 		<!-- End nav -->
 		<!-- Start slides -->
 		<div class="slideshow-content">
-			<ul class="slides">
+			<ul id="main-slider" class="slides">
 				<li>
 					<img src="new-images/main-slide.png" style="width:100%">
 					<div class="caption-wrapper">
@@ -97,7 +97,11 @@
 						</h2>						
 					</div>	
 				</li>
-			</ul>					
+			</ul>
+			<div class="button-wrapper">
+				<button class="arrow m-left-arrow"><em></em></button>
+				<button class="arrow m-right-arrow"><em></em></button>
+			</div>
 		</div>
 		<!-- End slides -->
 		<!-- Start information -->
@@ -552,7 +556,6 @@
 		<!-- End footer -->
 	</div>
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/flexslider/2.6.2/jquery.flexslider.js"></script>
 	<script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/functions.js"></script>

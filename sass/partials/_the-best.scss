@@ -30,3 +30,15 @@
 	}
 }
 // End best of
+@media (max-width: 1280px) {
+	.best-of {
+		.content {
+			width: 1220px;		
+			padding-right: 30px; 
+			padding-left: 30px;
+			img {
+				left: 30px;
+			}
+		}	
+	}
+}

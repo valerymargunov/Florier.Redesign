@@ -164,16 +164,29 @@
 		// End popular item 
 	}
 	.arrow {	
-			padding: 0;		
-			position: absolute;
-			top: 50%;
-			background: transparent;
-		}
-		.left-arrow {
-			left: 0;
-		}
-		.right-arrow {
-			right: 0;
-		}
+		padding: 0;		
+		position: absolute;
+		top: 50%;
+		background: transparent;
+	}
+	.left-arrow {
+		left: 0;
+	}
+	.right-arrow {
+		right: 0;
+	}
 }
 // End popular items
+@media (max-width: 1280px) {
+	.popular-items {
+		width: 1220px;
+		padding-left: 30px;
+		padding-right: 30px; 
+		.left-arrow {
+			left: 30px;
+		}
+		.right-arrow {
+			right: 30px;
+		}
+	}	
+}

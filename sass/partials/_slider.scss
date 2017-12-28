@@ -1,7 +1,6 @@
 // Start slideshow
 .slideshow-content {
 	position: relative;
-	overflow: hidden;
 	li {
 		position: relative;
 		.caption-wrapper {
@@ -37,18 +36,19 @@
 			border-bottom: 1px solid $light-grey;
 		}	
 	}	
-	.flex-direction-nav {
+	.button-wrapper {
 		position: absolute;
 		width: $narrow-width;
-		top: 40%;
+		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		margin: 0 auto;
-		list-style: none;
 		height: 100%;
-		a {			
+		.arrow {	
+			padding: 0;		
 			position: absolute;
+			top: 40%;
 			opacity: 0.65;
 			width: 75px;
 			height: 75px;
@@ -70,21 +70,40 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
-		}	
-		.flex-prev {
+		}
+		.m-left-arrow {
 			left: -23px;
 			em {
 				right: 5px;
 				background-image: url('../new-images/left-gray-arrow.png');
 			}
 		}
-		.flex-next {
+		.m-right-arrow {
 			right: -23px;
 			em {
 				left: 5px;
 				background-image: url('../new-images/right-gray-arrow.png');
 			}
-		}		
+		}	
 	}
 }
 // End slideshow
+@media (max-width: 1340px) {
+	.slideshow-content {
+		li {
+			.caption-wrapper {
+				.title-slide {
+					left: 30px;
+				}
+			}
+		}
+		.button-wrapper {
+			.m-left-arrow {
+				left: 7px;
+			}
+			.m-right-arrow {
+				right: 7px;
+			}	
+		}
+	}
+}

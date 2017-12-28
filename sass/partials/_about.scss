@@ -22,3 +22,10 @@
 
 }
 // End main information
+@media (max-width: 1280px) {
+	.main-information {
+		width: 1220px;		
+		padding-right: 30px; 
+		padding-left: 30px;
+	}
+}

@@ -9,11 +9,11 @@ $(document).ready(function(){
     }, function(){
     	$('.more-line').removeClass('more-line-active');
   });
-  $('.slideshow-content').flexslider({
-    animation: "slide",
-    controlNav: false,
-    prevText: "<em></em>",
-    nextText: "<em></em>"
+  $('#main-slider').slick({
+    slide: 'li',
+    dots: false,
+    prevArrow: $('.m-left-arrow'),
+    nextArrow: $('.m-right-arrow')
   });
   $('#popular-items').slick({
     slide: 'li',

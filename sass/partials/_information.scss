@@ -117,3 +117,22 @@
 	// End more-line-active
 }
 // End information
+@media (max-width: 1280px) {
+	// Start information
+	.information {
+		.row{
+			width: 1220px;
+			padding-left: 30px;
+			padding-right: 30px;
+			// Start col
+			.col {
+				width:399px;
+				&:last-child {
+					width:422px;
+				}
+			}
+			// End col
+		}
+		//End row
+	}
+}
