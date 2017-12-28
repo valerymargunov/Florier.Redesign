@@ -83,3 +83,8 @@ button {
 @import 'partials/about';
 @import 'partials/instagram';
 @import 'partials/footer';
+@media (max-width: 1280px) {
+	.container {
+		padding: 0 30px;
+	}
+}

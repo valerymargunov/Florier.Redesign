@@ -5,6 +5,7 @@
 	clear: both;
 	height: 335px;
 	background: url('../new-images/the-best.png') no-repeat center;
+	background-size: cover;
 	border-bottom: 1px solid $light-grey;
 	.content {
 		width: $narrow-width;

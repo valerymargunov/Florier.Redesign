@@ -90,7 +90,9 @@
 		transition: all 0.5s ease ;
 		.more-button {
 			position: absolute;
-			left: 46.5%;
+			left: 0;
+			right: 0;
+			margin: auto;
 			top: 25px;
 			height: 33px;
 			width: 130px;
